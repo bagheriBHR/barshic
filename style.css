@@ -14,7 +14,10 @@
 }
 /* navbar */
 .header{
-    background-color: #fff;
+    /* background-color: #fff; */
+    /* background-image: url(./image/logo4.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 /* .navbar .line{
     border-bottom: 1px solid rgba(0, 0, 0,0.2);
