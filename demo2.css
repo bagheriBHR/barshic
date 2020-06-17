@@ -1,29 +1,37 @@
 ﻿
 /* ---------------- For sticky header: class="float-panel"  ------------------*/
     .float-panel {
-        width:100%;z-index:300;padding:10px 0;transform: translateZ(0);
-        transition:all 0.3s; border-top: 4px solid #98165d;border-bottom: 3px solid #d7b989; /* Effect for switching from .fixed to static */
+        width:100%;background-color:rgba(152,22,93,0.9);z-index:300;padding:10px 0;transform: translateZ(0);
+        transition:all 0.5s;border-bottom: 3px solid #d7b989;border-top: 3px solid rgba(152,22,93,1); /* Effect for switching from .fixed to static */
     }
-    .float-panel li a{color:rgba(0,0,0,0.7);padding: 10px 25px; transition:all 0.3s; }
-    .float-panel .navbar li:hover{border-top: 1px solid #98165d; }
-    .float-panel .navbar li:hover a{color:rgba(0,0,0,0.9); }
+    /* .float-panel li a{color:rgba(0,0,0,0.7);padding: 10px 25px; transition:all 0.3s;font-weight: bold; } */
+    .float-panel li a{color:rgba(255,255,255,0.9);padding: 10px 30px; transition:all 0.3s;font-weight: bold; }
+    /* .float-panel .navbar li:hover{border-top: 1px solid #98165d; } */
+    .float-panel .navbar li:hover{border-top: 2px solid #dbaa5a; }
+    /* .float-panel .navbar li:hover a{color:rgba(0,0,0,0.9); } */
+    .float-panel .navbar li:hover a{color:rgba(255,255,255,1); }
     .float-panel .logo_img {width: 100%; transition:all 0.3s;display: block; }
     .float-panel .logo2_img {display: none; transition:all 0.3s; }
     .float-panel .navbar li{
-        border-top: 1px solid rgba(0, 0, 0,0.2);
+        border-top: 2px solid rgba(255, 255, 255,0.6);
         transition:all 0.3s;
         margin-top: 40px;
     }
+    /* .float-panel .navbar li{
+        border-top: 1px solid rgba(0, 0, 0,0.2);
+        transition:all 0.3s;
+        margin-top: 40px;
+    } */
 
     /* when class="float-panel fixed" */
-    .fixed {padding:7px 0;animation:slide-down 0.7s;background: rgba(152,22,93,0.8);border-top: none;border-bottom: 1px solid #d7b989;}
+    .fixed {padding:7px 0;animation:slide-down 0.7s;background:#373737 ;border-top: none;border-bottom: 2px solid #d7b989;z-index:1000;}
     .fixed li a {padding: 10px 25px;color:rgba(255,255,255,0.9); }
-    .fixed .navbar li:hover {border-top: 1px solid #fca315; }
+    .fixed .navbar li:hover {border-top: 1px solid #98165d; }
     .fixed .navbar li:hover a {color:rgba(255,255,255,1);}
     .fixed .logo_img {display: none; }
     .fixed .logo2_img {width: 100%;display: block; }
     .fixed .header {padding: 0px; }
-    .fixed .navbar li{border-top: 1px solid rgba(255, 255, 255,0.6);}
+    .fixed .navbar li{border-top: 1px solid #d7b989;}
     @keyframes slide-down {
         0% {
             opacity: 0;

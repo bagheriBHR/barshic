@@ -1,0 +1,117 @@
+/* Reset */
+
+/* Main Styles */
+.button {
+  display: block;
+  background-color: #373737;
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  color: #d7b989;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+.button span,
+.button .icon {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  color: #d7b989;
+}
+
+.button span {
+  width: 72%;
+  line-height: inherit;
+  font-size: 22px;
+  text-transform: uppercase;
+  left: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+  color: #d7b989;
+}
+
+.button span:after {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  right: -1px;
+}
+
+.button .icon {
+  width: 28%;
+  right: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+.button .icon .fa {
+  font-size: 30px;
+  vertical-align: middle;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+  color: #d7b989;
+}
+
+.button .icon .i1 {
+  height: 36px;
+}
+
+.button .icon .i2 {
+  display: none;
+}
+
+.button.success span, .button:hover span {
+  left: -72%;
+  opacity: 0;
+}
+
+.button.success .icon, .button:hover .icon {
+  width: 100%;
+}
+
+.button.success .icon .fa, .button:hover .icon .fa {
+  font-size: 45px;
+  color: #d7b989;
+}
+
+.button.success {
+  background-color: #27ae60;
+}
+
+.button.success .icon .i1 {
+  display: none;
+}
+
+.button.success .icon .i2 {
+  display: inline-block;
+}
+
+.button:hover {
+  opacity: .9;
+}
+
+.button:hover .icon .i1 {
+  height: 46px;
+}
+
+.button:active {
+  opacity: 1;
+}
+/*# sourceMappingURL=button.css.map */
