@@ -317,7 +317,7 @@
 </div>
 <!-- end of barshic units -->
 <!-- info -->
-<div class="position-relative">
+<div class="position-relative w-100">
     <div class="slider-for" dir="ltr">
         <img src="image/slide1.jpg" alt="">
         <img src="image/slide2.jpg" alt="">
@@ -491,11 +491,11 @@
                 });
             $('.slider-nav').slick({
                 slidesToShow: 3,
+                arrows: false,
                 slidesToScroll: 1,
                 asNavFor: '.slider-for',
                 autoplay: true,
                 centerMode: true,
-                infinit:true,
                 pauseOnHover:true,
                 autoplaySpeed: 2000,
                 // focusOnSelect: true
@@ -528,8 +528,7 @@
             $('.carousel-inner').css('height',$(window).height());
         });
     </script>
-    <script type="text/coffeescript"></script>
-
+    <script type="text/coffeescript">
         removeSuccess = ->
             $('.button').removeClass 'success'
 
